@@ -51,6 +51,10 @@ void Watchy7SEG::drawDate(){
     uint16_t w, h;
 
     String dayOfWeek = dayStr(currentTime.Wday);
+    if (currentTime.Wday == 4)
+    {
+        dayOfWeek = "Wednesdy";
+    }
     display.getTextBounds(dayOfWeek, 5, 85, &x1, &y1, &w, &h);
     if(currentTime.Wday == 4){
         w = w - 5;
