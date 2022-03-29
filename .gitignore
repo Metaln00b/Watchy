@@ -68,3 +68,11 @@ manifest.mf
 nbbuild.xml
 nbproject
 .vscode
+
+.pioenvs
+.piolibdeps
+.clang_complete
+.gcc-flags.json
+.pio
+
+src/settings.private.h
